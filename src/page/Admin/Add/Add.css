@@ -1,0 +1,41 @@
+
+
+.product{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(235, 217, 217);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.productForm{
+
+   width: 500px;
+   height: 500px;
+   background: rgb(241, 166, 166);
+   display: flex;
+   flex-direction: column;
+   gap:30px;
+   opacity: 0.5;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+
+}
+input{
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(133, 8, 8);
+    font-size: 20px;
+    
+}
+.btnSave{
+    width: 100px;
+    height: 50px;
+    background: red;
+    border-radius: 10px;
+}
