@@ -6,6 +6,7 @@ import Signup from "./page/Signup/Signup";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Admin from "./page/Admin/Admin";
 import AddProduct from "./page/Admin/Add/AddProduct";
+import Cart from "./page/Cart/Cart";
 
 function App() {
   const user=useSelector((state) => state.authReducer.user)
@@ -19,6 +20,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/product" element={<AddProduct />} />
+        <Route path="/cart" element={<Cart/>} />
+
       </Routes>
     </div>
   );

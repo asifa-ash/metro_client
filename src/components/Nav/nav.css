@@ -1,5 +1,111 @@
-.nav{
-    min-width: 100vw;
-    height: 80px;
-    background: rgb(109, 172, 198);
+.Anounce {
+    background: white;
+    
+    display: flex;
+    
+
+    align-items: center;
+    width: 100vw;
+    height: 90px;
+    box-shadow: -2px -1px 11px 1px rgb(203 191 191 / 40%);
+    position: relative;
+    z-index: 10;
+
+
+
+
+
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding-left: 30px;
+    align-items: center;
+    font-family: "Rubik"
+
+    
+
+
+}
+.title{
+    display: flex;
+    gap:35px;
+    height: 100%;
+    align-items: center;
+    color:#567989;
+    font-size: 8px;
+    cursor: pointer;
+}
+.icon{
+    font-weight:bold;
+    font-size: 45px;
+    font-family: "Moon Dance";
+    display: flex;
+margin-bottom: 10px;
+color: rgb(33, 180, 180);
+height: 100%;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+
+    
+}
+.account{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self:end;
+    gap:20px;
+    padding-right: 20px;
+    font-size: 15px;
+    color:#567989;
+    cursor: pointer;
+    
+    
+}
+.hr{
+    width: 1px;
+    height: 85%;
+ 
+    background: rgb(242, 239, 239);
+}
+.active:hover{
+    background: rgb(242, 225, 225);
+    border: solid 1px  rgb(33, 180, 180);
+    border-radius: 3px;
+}
+.submenu{
+    display: none;
+}
+.active:hover .submenu{
+    display: block;
+    position: absolute;
+    background:white;
+    margin-top:20px;
+    width: 190px;
+    border-top:solid 3px  rgb(33, 180, 180); 
+    padding: 10px;
+    box-shadow: 0px -1px 8px 1px rgb(17, 16, 15);
+    
+
+
+}
+.active:hover .submenu ul li{
+padding: 8px;
+font-family: "Moon Dance";
+font-size: 15px;
+font-weight: bold;
+}
+.logOutBtn{
+   width: 70px;
+   height: 30px;
+   background: white; 
+   border: none;
+   box-shadow: -2px -1px 11px 1px rgb(203 191 191 / 40%);
+   border-radius: 5px;
 }

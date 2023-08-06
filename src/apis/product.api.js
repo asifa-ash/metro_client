@@ -4,5 +4,8 @@ export const product={
         return axios.post("/product/upload", data.body,data.option);
 
     },
+    getAll() {
+        return axios.get("/product/getAll");
+      },
     
 }

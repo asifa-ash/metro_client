@@ -37,6 +37,7 @@ const AddProduct = () => {
         },
       })
     );
+    
   };
 
   return (

@@ -1,6 +1,6 @@
 import {  createSlice } from "@reduxjs/toolkit";
 
-import { upload } from "../async/product";
+import { getAll, upload } from "../async/product";
 
 const products = createSlice({
   name: "products",
@@ -10,10 +10,10 @@ const products = createSlice({
       console.log(action);
       state.products = action.payload;
     });
-    // builder.addCase(getAll.fulfilled, (state, action) => {
-    //   console.log(action.payload);
-    //   state.users = action.payload;
-    // });
+    builder.addCase(getAll.fulfilled, (state, action) => {
+      console.log(action.payload);
+      state.products = action.payload;
+    });
     // builder.addCase(getOne.fulfilled, (state, action) => {
     //   console.log(action.payload);
     //   state.users = action.payload;
